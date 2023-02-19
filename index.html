@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Week2 Pro Workshop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <div class="container">
+    <body>
+      <div class="box">
+        <link rel="stylesheet" href="src/styles.css" />
+        <h1>Nigeria London New York Canada South African ...</h1>
+        <br />
+        <div class="row">
+          <div class="col-6">
+            <form id="google-form">
+              <input
+                type="text"
+                placeholder="Type a city..."
+                autocomplete="off"
+                autofocus="on"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Current"
+                  class="form-control btn btn-success shadow-sm"
+                />
+              </div>
+            </form>
+          <br />
+
+          <ul>
+            <li id="city"></li>
+            <li id="current-time">Friday 4:31</li>
+            <li><span id="sunny">Sunny</span></li>
+
+            <span class="weather">
+              <p>Humidity:<span id="humidity"></span>%</p>
+              <p>Wind:<span id="wind"></span> km/hr</p>
+            </span>
+          </ul>
+          <div class="row">
+            <div class="col-sm">
+              <span class="sun">⚪</span>
+              <span class="temperature" id="temperature"> </span>
+              <span class="sup">°C</span>
+            </div>
+             </div>
+            <br />
+        </div>
+      </div>
+      <h2>
+          <a href="https://github.com/Queency31NSPPD/WeatherApp"
+            >Open-source code</a>
+          by Bridget Nnenna
+      </h2>
+      <script src="src/index.js"></script>
+    </body>
+</html>
